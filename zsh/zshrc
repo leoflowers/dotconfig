@@ -105,3 +105,7 @@ export PATH=$PATH:/home/lflores/.local/bin:/usr/local/cuda-12.4/bin
 
 # opam configuration
 [[ ! -r /home/lflores/.opam/opam-init/init.zsh ]] || source /home/lflores/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+if [ -f $HOME/.zshrc.pre-oh-my-zsh ]; then
+	source $HOME/.zshrc.pre-oh-my-zsh
+fi
