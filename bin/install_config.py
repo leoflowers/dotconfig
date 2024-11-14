@@ -5,7 +5,7 @@ import subprocess
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--home_path', help='full home path')
-parser.add_argument('--override', help='override old config')
+parser.add_argument('--override', help='override old config', action='store_true')
 args = parser.parse_args()
 
 if args.home_path:
