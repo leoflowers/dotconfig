@@ -18,8 +18,12 @@ one_up = pathlib.Path(__file__).parent.parent.resolve()
 
 for entry in one_up.iterdir():
     if entry.is_dir() and (entry.name != 'bin') and (entry.name != '.git'):
-        target = next(entry.glob('*')).resolve()
-        name = pathlib.Path(f'{home_path}/.{target.name}')
+        if entry.name == 'nvim':
+            target = entry.resolve()
+            name = pathlib.Path(f'{home_path}/.config/{entry.name}')
+        else:
+            target = next(entry.glob('*')).resolve()
+            name = pathlib.Path(f'{home_path}/.{target.name}')
 
         if pathlib.Path(name).exists():
             print('Config already exists')
