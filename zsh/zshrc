@@ -18,10 +18,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-
 # My configuration.
-
 alias ls="lsd --icon never"
-
 [[ ! -r /home/lflores/.opam/opam-init/init.zsh ]] || source /home/lflores/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
