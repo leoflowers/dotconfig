@@ -1,5 +1,4 @@
 {
-  "lazy.nvim": { "branch": "main", "commit": "d8f26efd456190241afd1b0f5235fe6fdba13d4a" },
-  "modicator.nvim": { "branch": "main", "commit": "e349636d905e03305f1eda9c081e63560598f118" },
-  "onedark.nvim": { "branch": "main", "commit": "8da3a0918a73eec2096fa7a8a0acecd70a646d9c" }
+  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
+  "nvim-lsp": { "branch": "master", "commit": "d793c5cb0206d976a38e70e62479a60ba87722ca" }
 }

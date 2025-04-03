@@ -20,7 +20,7 @@ require("lazy").setup({
   spec = {
     { import = "plugins" },
   },
-  checker = { enabled = true, notify = true },
+  checker = { enabled = false },
 })
 
 require'lspconfig'.pyright.setup{}
