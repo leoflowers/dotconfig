@@ -1,9 +1,16 @@
+# Not all of the things referred to in this file
+# are installed everywhere... So I will also need
+# a way to install them on a new machine. TBD...
+
 # Oh My Zsh.
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="sunaku"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
-# My configuration.
 alias ls="lsd --icon never"
 alias python3="python3.13"
+
+eval $(opam env)
+
+. "$HOME/.local/bin/env"
