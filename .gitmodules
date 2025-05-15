@@ -1,0 +1,3 @@
+[submodule "cgit/cgit-dark"]
+	path = cgit/cgit-dark
+	url = https://jears.at/gitclone/cgit-dark
