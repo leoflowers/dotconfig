@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+
+import os
+import subprocess
+
+
+def is_brew_installed() -> bool:
+    '''
+    Check if homebrew package manager is installed.
+    '''
+
+    result = subprocess.run('brew --version', 
+                            capture_output=True, 
+                            shell=True, 
+                            check=True)
+    
+    if result.returncode != 0:
+        return False
+
+    version = result.stdout.decode('utf-8').strip().split(' ')[1]
+    print(f'homebrew version {version}')
+    return True
+
+
+if __name__ == '__main__':
+    if os.uname().sysname != 'Darwin':
+        print('only macOS is supported currently')
+        exit(1)
+
+    if not is_brew_installed():
+        print('error: brew is not installed. cannot continue')
+        exit(1) 
