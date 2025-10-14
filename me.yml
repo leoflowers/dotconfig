@@ -1,0 +1,19 @@
+# Everything I need for my environment.
+
+languages:
+  - python
+
+tools:
+  - conda:
+    dependencies: 
+      - python
+    config: environment.yml
+  - tmux:
+    config: .tmux.conf
+    location: ~
+  - nvim:
+    config: nvim
+    location: ~/.config
+  - zsh:
+    config: .zshrc
+    location: ~
