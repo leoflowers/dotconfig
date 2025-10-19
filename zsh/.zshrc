@@ -37,3 +37,6 @@ else
 fi
 
 conda activate ldf
+
+# personal bin directory
+export PATH="$HOME/bin:$PATH"
