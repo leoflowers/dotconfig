@@ -4,16 +4,16 @@ languages:
   - python
 
 tools:
-  - conda:
+  - name: conda
     dependencies: 
-      - python
+      python
     config: environment.yml
-  - tmux:
+  - name: tmux
     config: .tmux.conf
     location: ~
-  - nvim:
+  - name: nvim
     config: nvim
     location: ~/.config
-  - zsh:
+  - name: zsh
     config: .zshrc
     location: ~
