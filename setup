@@ -46,7 +46,7 @@ def get_package_manager(os_name: str) -> str:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        prog="setup", description="leo's programming environment"
+        prog="setup", description="leo's development environment"
     )
     parser.add_argument("-x", "--develop", action="store_true")
 

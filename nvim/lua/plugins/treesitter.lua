@@ -11,6 +11,8 @@ return {{
 			  "vim", 
 			  "python",
 			  "rust",
+			  "terraform",
+			  "hcl",
 		  },
           highlight = { enable = true },
         })
