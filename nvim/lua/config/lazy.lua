@@ -26,3 +26,6 @@ require("lazy").setup({
 
 require'lspconfig'.pyright.setup{}
 
+require('hardline').setup{
+	theme = 'gruvbox_minimal',
+}
