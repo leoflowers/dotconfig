@@ -1,1 +1,0 @@
-/Users/leoflores/dev/dotconfig/zsh/.zshrc
